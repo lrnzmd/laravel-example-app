@@ -1,10 +1,7 @@
-<!DOCTYPE html>
+@extends('layout')
 
-<title>My blog</title>
 
-<link rel="stylesheet" href="/app.css" />
-
-<body>
+@section('content')
     @foreach ($posts as $post)
         <article class="{{ $loop-> even ? 'footbar' : ''}}">
             <h1>   
@@ -16,6 +13,5 @@
                 {{ $post->excerpt }}
             </div>
         </article>
-
     @endforeach
-</body>
+@endsection

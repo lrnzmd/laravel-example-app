@@ -1,18 +1,13 @@
-<!DOCTYPE html>
+@extends('layout')
 
-<title>single post</title>
-
-<link rel="stylesheet" href="/app.css" />
-
-
-<body>
+@section('content')
     <article>
         <h1>{{ $post->title }}</h1>
         <div>
             {!! $post->body !!}
         </div>
+        <a href="/">
+            Go back
+        </a>
     </article>
-    <a href="/">
-        Go back
-    </a>
-</body>
+@endsection
