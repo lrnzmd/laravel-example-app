@@ -5,5 +5,6 @@
 <link rel="stylesheet" href="/app.css" />
 
 <body>
-    @yield('content')
+    <!-- @yield('content') -->
+    {{ $content }}
 </body>
